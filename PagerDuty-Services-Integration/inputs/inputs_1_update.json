@@ -1,8 +1,8 @@
 {
-    "Type": "generic_email_inbound_integration",
+    "Type": "event_transformer_api_inbound_integration",
     "Name":"Email",
-    "ServiceId": "SERVICE_ID",
-    "VendorId": "VENDOR_ID",
+    "ServiceId": "P55XL09",
+    "VendorId": "PZQ6AUS",
     "IntegrationEmail": "test@dev-aws-cloudformation-cloudsoft.pagerduty.com",
     "EmailIncidentCreation": "use_rules",
     "EmailFilterMode": "or-rules-email",
