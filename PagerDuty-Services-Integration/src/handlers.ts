@@ -38,8 +38,7 @@ class Resource extends AbstractPagerDutyResource<ResourceModel, IntegrationPaylo
     }
 
     async list(model: ResourceModel, typeConfiguration?: TypeConfigurationModel): Promise<ResourceModel[]> {
-        // no api to list integrations
-        //throw new InvalidRequest();
+        // no api to list integration, use Read as List
         try {
             const response = await new PagerDutyClient(typeConfiguration?.pagerDutyAccess.token, this.userAgent).doRequest<{
                 integration: IntegrationPayload
