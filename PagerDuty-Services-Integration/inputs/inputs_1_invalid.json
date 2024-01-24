@@ -1,8 +1,0 @@
-{
-    "Type": "event_transformer_api_inbound_integration",
-    "Name":"Email",
-    "ServiceId": "P55XL09",
-    "VendorId": "Invalid Vendor",
-    "IntegrationEmail": "test@dev-aws-cloudformation-cloudsoft.pagerduty.com"
-}
-

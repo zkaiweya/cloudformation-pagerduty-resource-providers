@@ -1,7 +1,7 @@
 {
     "Type": "generic_email_inbound_integration",
     "Name":"Email",
-    "ServiceId": "SERVICE_ID",
+    "ServiceId": "PAGER_DUTY_SERVICE_ID",
     "VendorId": "Invalid Vendor",
     "IntegrationEmail": "test@dev-aws-cloudformation-cloudsoft.pagerduty.com"
 }
