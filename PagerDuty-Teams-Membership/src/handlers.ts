@@ -49,8 +49,6 @@ class Resource extends AbstractPagerDutyResource<ResourceModel, ResourceModel, v
     }
 
     async create(model: ResourceModel, typeConfiguration?: TypeConfigurationModel): Promise<void> {
-        console.log("Team membership create input model")
-        console.log(JSON.stringify(model))
         await new PagerDutyClient(typeConfiguration.pagerDutyAccess.token, this.userAgent).doRequest(
             'put',
             `/teams/${model.teamId}/users/${model.userId}`,
