@@ -1,5 +1,5 @@
 {
-    "Type": "generic_email_inbound_integration",
+    "Type": "event_transformer_api_inbound_integration",
     "Name":"Email",
     "ServiceId": "PAGER_DUTY_SERVICE_ID",
     "VendorId": "Invalid Vendor",
