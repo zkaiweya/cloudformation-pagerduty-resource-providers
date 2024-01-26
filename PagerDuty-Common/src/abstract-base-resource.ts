@@ -124,6 +124,8 @@ export abstract class AbstractBaseResource<ResourceModelType extends BaseModel, 
             try {
                 let data = await this.create(model, typeConfiguration);
                 model = this.setModelFrom(model, data);
+                console.log(JSON.stringify("Create response"))
+                console.log(JSON.stringify(model))
                 const retry = 1;
                 const maxDelay = Math.pow(2, retry) * Math.random();
                 return ProgressEvent.builder<ProgressEvent<ResourceModelType, RetryableCallbackContext>>()
